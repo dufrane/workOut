@@ -173,6 +173,7 @@ extension MainViewController: StartWorkoutProtocol {
         } else {
             let timerWorkoutViewController = TimerWorkoutViewController()
             timerWorkoutViewController.modalPresentationStyle = .fullScreen
+            timerWorkoutViewController.workoutModel = model
             present(timerWorkoutViewController, animated: true)
         }
     }
@@ -221,7 +222,7 @@ extension MainViewController: UITableViewDelegate {
         
         action.backgroundColor = .specialBackground
         action.image = UIImage(named: "delete")
-        
+
         return UISwipeActionsConfiguration(actions: [action])
     }
 }

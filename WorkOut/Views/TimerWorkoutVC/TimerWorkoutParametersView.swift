@@ -105,6 +105,7 @@ class TimerWorkoutParametersView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
         setupViews()
         setConstraints()
     }
@@ -114,7 +115,7 @@ class TimerWorkoutParametersView: UIView {
     }
     
     private func setupViews() {
-        backgroundColor = .specialBrown
+        backgroundColor = .specialLightBrown
         layer.cornerRadius = 10
         translatesAutoresizingMaskIntoConstraints = false
         
